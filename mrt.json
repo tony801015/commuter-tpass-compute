@@ -1,0 +1,535 @@
+[
+    {
+      "StationSID": "019",
+      "StationName": "動物園"
+    },
+    {
+      "StationSID": "018",
+      "StationName": "木柵"
+    },
+    {
+      "StationSID": "017",
+      "StationName": "萬芳社區"
+    },
+    {
+      "StationSID": "016",
+      "StationName": "萬芳醫院"
+    },
+    {
+      "StationSID": "015",
+      "StationName": "辛亥"
+    },
+    {
+      "StationSID": "014",
+      "StationName": "麟光"
+    },
+    {
+      "StationSID": "013",
+      "StationName": "六張犁"
+    },
+    {
+      "StationSID": "012",
+      "StationName": "科技大樓"
+    },
+    {
+      "StationSID": "011",
+      "StationName": "大安"
+    },
+    {
+      "StationSID": "010",
+      "StationName": "忠孝復興"
+    },
+    {
+      "StationSID": "009",
+      "StationName": "南京復興"
+    },
+    {
+      "StationSID": "008",
+      "StationName": "中山國中"
+    },
+    {
+      "StationSID": "007",
+      "StationName": "松山機場"
+    },
+    {
+      "StationSID": "021",
+      "StationName": "大直"
+    },
+    {
+      "StationSID": "022",
+      "StationName": "劍南路"
+    },
+    {
+      "StationSID": "023",
+      "StationName": "西湖"
+    },
+    {
+      "StationSID": "024",
+      "StationName": "港墘"
+    },
+    {
+      "StationSID": "025",
+      "StationName": "文德"
+    },
+    {
+      "StationSID": "026",
+      "StationName": "內湖"
+    },
+    {
+      "StationSID": "027",
+      "StationName": "大湖公園"
+    },
+    {
+      "StationSID": "028",
+      "StationName": "葫洲"
+    },
+    {
+      "StationSID": "029",
+      "StationName": "東湖"
+    },
+    {
+      "StationSID": "030",
+      "StationName": "南港軟體園區"
+    },
+    {
+      "StationSID": "031",
+      "StationName": "南港展覽館"
+    },
+    {
+      "StationSID": "099",
+      "StationName": "象山"
+    },
+    {
+      "StationSID": "100",
+      "StationName": "台北101/世貿"
+    },
+    {
+      "StationSID": "101",
+      "StationName": "信義安和"
+    },
+    {
+      "StationSID": "011",
+      "StationName": "大安"
+    },
+    {
+      "StationSID": "103",
+      "StationName": "大安森林公園"
+    },
+    {
+      "StationSID": "134",
+      "StationName": "東門"
+    },
+    {
+      "StationSID": "042",
+      "StationName": "中正紀念堂"
+    },
+    {
+      "StationSID": "050",
+      "StationName": "台大醫院"
+    },
+    {
+      "StationSID": "051",
+      "StationName": "台北車站"
+    },
+    {
+      "StationSID": "053",
+      "StationName": "中山"
+    },
+    {
+      "StationSID": "054",
+      "StationName": "雙連"
+    },
+    {
+      "StationSID": "055",
+      "StationName": "民權西路"
+    },
+    {
+      "StationSID": "056",
+      "StationName": "圓山"
+    },
+    {
+      "StationSID": "057",
+      "StationName": "劍潭"
+    },
+    {
+      "StationSID": "058",
+      "StationName": "士林"
+    },
+    {
+      "StationSID": "059",
+      "StationName": "芝山"
+    },
+    {
+      "StationSID": "060",
+      "StationName": "明德"
+    },
+    {
+      "StationSID": "061",
+      "StationName": "石牌"
+    },
+    {
+      "StationSID": "062",
+      "StationName": "唭哩岸"
+    },
+    {
+      "StationSID": "063",
+      "StationName": "奇岩"
+    },
+    {
+      "StationSID": "064",
+      "StationName": "北投"
+    },
+    {
+      "StationSID": "065",
+      "StationName": "新北投"
+    },
+    {
+      "StationSID": "066",
+      "StationName": "復興崗"
+    },
+    {
+      "StationSID": "067",
+      "StationName": "忠義"
+    },
+    {
+      "StationSID": "068",
+      "StationName": "關渡"
+    },
+    {
+      "StationSID": "069",
+      "StationName": "竹圍"
+    },
+    {
+      "StationSID": "070",
+      "StationName": "紅樹林"
+    },
+    {
+      "StationSID": "071",
+      "StationName": "淡水"
+    },
+    {
+      "StationSID": "033",
+      "StationName": "新店"
+    },
+    {
+      "StationSID": "034",
+      "StationName": "新店區公所"
+    },
+    {
+      "StationSID": "035",
+      "StationName": "七張"
+    },
+    {
+      "StationSID": "032",
+      "StationName": "小碧潭"
+    },
+    {
+      "StationSID": "037",
+      "StationName": "景美"
+    },
+    {
+      "StationSID": "038",
+      "StationName": "萬隆"
+    },
+    {
+      "StationSID": "039",
+      "StationName": "公館"
+    },
+    {
+      "StationSID": "040",
+      "StationName": "台電大樓"
+    },
+    {
+      "StationSID": "041",
+      "StationName": "古亭"
+    },
+    {
+      "StationSID": "042",
+      "StationName": "中正紀念堂"
+    },
+    {
+      "StationSID": "043",
+      "StationName": "小南門"
+    },
+    {
+      "StationSID": "086",
+      "StationName": "西門"
+    },
+    {
+      "StationSID": "105",
+      "StationName": "北門"
+    },
+    {
+      "StationSID": "053",
+      "StationName": "中山"
+    },
+    {
+      "StationSID": "132",
+      "StationName": "松江南京"
+    },
+    {
+      "StationSID": "009",
+      "StationName": "南京復興"
+    },
+    {
+      "StationSID": "109",
+      "StationName": "台北小巨蛋"
+    },
+    {
+      "StationSID": "110",
+      "StationName": "南京三民"
+    },
+    {
+      "StationSID": "111",
+      "StationName": "松山"
+    },
+    {
+      "StationSID": "048",
+      "StationName": "南勢角"
+    },
+    {
+      "StationSID": "047",
+      "StationName": "景安"
+    },
+    {
+      "StationSID": "046",
+      "StationName": "永安市場"
+    },
+    {
+      "StationSID": "045",
+      "StationName": "頂溪"
+    },
+    {
+      "StationSID": "041",
+      "StationName": "古亭"
+    },
+    {
+      "StationSID": "134",
+      "StationName": "東門"
+    },
+    {
+      "StationSID": "089",
+      "StationName": "忠孝新生"
+    },
+    {
+      "StationSID": "132",
+      "StationName": "松江南京"
+    },
+    {
+      "StationSID": "131",
+      "StationName": "行天宮"
+    },
+    {
+      "StationSID": "130",
+      "StationName": "中山國小"
+    },
+    {
+      "StationSID": "055",
+      "StationName": "民權西路"
+    },
+    {
+      "StationSID": "128",
+      "StationName": "大橋頭"
+    },
+    {
+      "StationSID": "127",
+      "StationName": "台北橋"
+    },
+    {
+      "StationSID": "126",
+      "StationName": "菜寮"
+    },
+    {
+      "StationSID": "125",
+      "StationName": "三重"
+    },
+    {
+      "StationSID": "124",
+      "StationName": "先嗇宮"
+    },
+    {
+      "StationSID": "123",
+      "StationName": "頭前庄"
+    },
+    {
+      "StationSID": "122",
+      "StationName": "新莊"
+    },
+    {
+      "StationSID": "121",
+      "StationName": "輔大"
+    },
+    {
+      "StationSID": "180",
+      "StationName": "丹鳳"
+    },
+    {
+      "StationSID": "179",
+      "StationName": "迴龍"
+    },
+    {
+      "StationSID": "178",
+      "StationName": "三重國小"
+    },
+    {
+      "StationSID": "177",
+      "StationName": "三和國中"
+    },
+    {
+      "StationSID": "176",
+      "StationName": "徐匯中學"
+    },
+    {
+      "StationSID": "175",
+      "StationName": "三民高中"
+    },
+    {
+      "StationSID": "174",
+      "StationName": "蘆洲"
+    },
+    {
+      "StationSID": "076",
+      "StationName": "頂埔"
+    },
+    {
+      "StationSID": "077",
+      "StationName": "永寧"
+    },
+    {
+      "StationSID": "078",
+      "StationName": "土城"
+    },
+    {
+      "StationSID": "079",
+      "StationName": "海山"
+    },
+    {
+      "StationSID": "080",
+      "StationName": "亞東醫院"
+    },
+    {
+      "StationSID": "081",
+      "StationName": "府中"
+    },
+    {
+      "StationSID": "082",
+      "StationName": "板橋"
+    },
+    {
+      "StationSID": "083",
+      "StationName": "新埔"
+    },
+    {
+      "StationSID": "084",
+      "StationName": "江子翠"
+    },
+    {
+      "StationSID": "085",
+      "StationName": "龍山寺"
+    },
+    {
+      "StationSID": "086",
+      "StationName": "西門"
+    },
+    {
+      "StationSID": "051",
+      "StationName": "台北車站"
+    },
+    {
+      "StationSID": "088",
+      "StationName": "善導寺"
+    },
+    {
+      "StationSID": "089",
+      "StationName": "忠孝新生"
+    },
+    {
+      "StationSID": "010",
+      "StationName": "忠孝復興"
+    },
+    {
+      "StationSID": "091",
+      "StationName": "忠孝敦化"
+    },
+    {
+      "StationSID": "092",
+      "StationName": "國父紀念館"
+    },
+    {
+      "StationSID": "093",
+      "StationName": "市政府"
+    },
+    {
+      "StationSID": "094",
+      "StationName": "永春"
+    },
+    {
+      "StationSID": "095",
+      "StationName": "後山埤"
+    },
+    {
+      "StationSID": "096",
+      "StationName": "昆陽"
+    },
+    {
+      "StationSID": "097",
+      "StationName": "南港"
+    },
+    {
+      "StationSID": "031",
+      "StationName": "南港展覽館"
+    },
+    {
+      "StationSID": "201",
+      "StationName": "十四張"
+    },
+    {
+      "StationSID": "202",
+      "StationName": "秀朗橋"
+    },
+    {
+      "StationSID": "203",
+      "StationName": "景平"
+    },
+    {
+      "StationSID": "047",
+      "StationName": "景安"
+    },
+    {
+      "StationSID": "205",
+      "StationName": "中和"
+    },
+    {
+      "StationSID": "206",
+      "StationName": "橋和"
+    },
+    {
+      "StationSID": "207",
+      "StationName": "中原"
+    },
+    {
+      "StationSID": "208",
+      "StationName": "板新"
+    },
+    {
+      "StationSID": "209",
+      "StationName": "板橋"
+    },
+    {
+      "StationSID": "210",
+      "StationName": "新埔民生"
+    },
+    {
+      "StationSID": "123",
+      "StationName": "頭前庄"
+    },
+    {
+      "StationSID": "212",
+      "StationName": "幸福"
+    },
+    {
+      "StationSID": "213",
+      "StationName": "新北產業園區"
+    }
+  ]
+  

@@ -1,0 +1,62 @@
+[
+  {
+    "StartSID": "095",
+    "EndSID": "132",
+    "StartStationName": "後山埤",
+    "EndStationName": "松江南京",
+    "DeductedFare": "25",
+    "Discount60": "15",
+    "Discount40": "10",
+    "Lang": "tw"
+  },
+  {
+    "StartSID": "095",
+    "EndSID": "078",
+    "StartStationName": "後山埤",
+    "EndStationName": "土城",
+    "DeductedFare": "45",
+    "Discount60": "27",
+    "Discount40": "18",
+    "Lang": "tw"
+  },
+  {
+    "StartSID": "095",
+    "EndSID": "101",
+    "StartStationName": "後山埤",
+    "EndStationName": "信義安和",
+    "DeductedFare": "25",
+    "Discount60": "15",
+    "Discount40": "10",
+    "Lang": "tw"
+  },
+  {
+    "StartSID": "101",
+    "EndSID": "064",
+    "StartStationName": "信義安和",
+    "EndStationName": "北投",
+    "DeductedFare": "40",
+    "Discount60": "24",
+    "Discount40": "16",
+    "Lang": "tw"
+  },
+  {
+    "StartSID": "064",
+    "EndSID": "132",
+    "StartStationName": "北投",
+    "EndStationName": "松江南京",
+    "DeductedFare": "35",
+    "Discount60": "21",
+    "Discount40": "14",
+    "Lang": "tw"
+  },
+  {
+    "StartSID": "132",
+    "EndSID": "095",
+    "StartStationName": "松江南京",
+    "EndStationName": "後山埤",
+    "DeductedFare": "25",
+    "Discount60": "15",
+    "Discount40": "10",
+    "Lang": "tw"
+  }
+]
