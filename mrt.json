@@ -36,10 +36,6 @@
       "StationName": "大安"
     },
     {
-      "StationSID": "010",
-      "StationName": "忠孝復興"
-    },
-    {
       "StationSID": "009",
       "StationName": "南京復興"
     },
@@ -108,16 +104,8 @@
       "StationName": "信義安和"
     },
     {
-      "StationSID": "011",
-      "StationName": "大安"
-    },
-    {
       "StationSID": "103",
       "StationName": "大安森林公園"
-    },
-    {
-      "StationSID": "134",
-      "StationName": "東門"
     },
     {
       "StationSID": "042",
@@ -128,20 +116,12 @@
       "StationName": "台大醫院"
     },
     {
-      "StationSID": "051",
-      "StationName": "台北車站"
-    },
-    {
       "StationSID": "053",
       "StationName": "中山"
     },
     {
       "StationSID": "054",
       "StationName": "雙連"
-    },
-    {
-      "StationSID": "055",
-      "StationName": "民權西路"
     },
     {
       "StationSID": "056",
@@ -244,10 +224,6 @@
       "StationName": "古亭"
     },
     {
-      "StationSID": "042",
-      "StationName": "中正紀念堂"
-    },
-    {
       "StationSID": "043",
       "StationName": "小南門"
     },
@@ -258,18 +234,6 @@
     {
       "StationSID": "105",
       "StationName": "北門"
-    },
-    {
-      "StationSID": "053",
-      "StationName": "中山"
-    },
-    {
-      "StationSID": "132",
-      "StationName": "松江南京"
-    },
-    {
-      "StationSID": "009",
-      "StationName": "南京復興"
     },
     {
       "StationSID": "109",
@@ -298,10 +262,6 @@
     {
       "StationSID": "045",
       "StationName": "頂溪"
-    },
-    {
-      "StationSID": "041",
-      "StationName": "古亭"
     },
     {
       "StationSID": "134",
@@ -412,10 +372,6 @@
       "StationName": "府中"
     },
     {
-      "StationSID": "082",
-      "StationName": "板橋"
-    },
-    {
       "StationSID": "083",
       "StationName": "新埔"
     },
@@ -428,20 +384,12 @@
       "StationName": "龍山寺"
     },
     {
-      "StationSID": "086",
-      "StationName": "西門"
-    },
-    {
       "StationSID": "051",
       "StationName": "台北車站"
     },
     {
       "StationSID": "088",
       "StationName": "善導寺"
-    },
-    {
-      "StationSID": "089",
-      "StationName": "忠孝新生"
     },
     {
       "StationSID": "010",
@@ -476,10 +424,6 @@
       "StationName": "南港"
     },
     {
-      "StationSID": "031",
-      "StationName": "南港展覽館"
-    },
-    {
       "StationSID": "201",
       "StationName": "十四張"
     },
@@ -490,10 +434,6 @@
     {
       "StationSID": "203",
       "StationName": "景平"
-    },
-    {
-      "StationSID": "047",
-      "StationName": "景安"
     },
     {
       "StationSID": "205",
@@ -518,10 +458,6 @@
     {
       "StationSID": "210",
       "StationName": "新埔民生"
-    },
-    {
-      "StationSID": "123",
-      "StationName": "頭前庄"
     },
     {
       "StationSID": "212",
