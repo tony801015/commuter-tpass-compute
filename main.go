@@ -1,6 +1,7 @@
 package main
 
 import (
+	"crypto/tls"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -26,8 +27,8 @@ type FareRequest struct {
 	StartStationName string `json:"startStationName"`
 	EndStationName   string `json:"endStationName"`
 	IsRoundTrip      bool   `json:"isRoundTrip"`
+	Trips            int    `json:"Trips"`
 }
-
 type FareResponse struct {
 	TotalFare int `json:"totalFare"`
 }
@@ -137,8 +138,13 @@ func fetchMetroData(startSID, endSID string) (*MetroData, error) {
 	    "Lang": "tw"
 	}`, startSID, endSID))
 
-	client := &http.Client{}
+	tr := &http.Transport{
+		TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+	}
+
+	client := &http.Client{Transport: tr}
 	req, err := http.NewRequest(method, url, payload)
+
 	if err != nil {
 		return nil, err
 	}
@@ -199,7 +205,11 @@ func calculateTotalFare(requests []FareRequest) (int, error) {
 		if req.IsRoundTrip {
 			fare *= 2
 		}
-		totalFare += fare
+
+		if req.Trips == 0 {
+			req.Trips = 1 // 如果沒有帶「趟數」這個參數預設為1
+		}
+		totalFare += fare * req.Trips
 	}
 
 	return totalFare, nil
