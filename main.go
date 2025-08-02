@@ -54,8 +54,20 @@ func main() {
 		startName := c.DefaultQuery("startName", "")
 		endName := c.DefaultQuery("endName", "")
 
-		startsid := getSIDByName(startName)
-		endsid := getSIDByName(endName)
+		startsid, err := getSIDByName(startName)
+		if err != nil {
+			c.JSON(http.StatusBadRequest, gin.H{
+				"error": err.Error(),
+			})
+			return
+		}
+		endsid, err := getSIDByName(endName)
+		if err != nil {
+			c.JSON(http.StatusBadRequest, gin.H{
+				"error": err.Error(),
+			})
+			return
+		}
 
 		data, err := fetchMetroData(startsid, endsid)
 		if err != nil {
@@ -108,13 +120,13 @@ func loadStations() error {
 	return json.Unmarshal(content, &stations)
 }
 
-func getSIDByName(name string) string {
+func getSIDByName(name string) (string, error) {
 	for _, station := range stations {
 		if station.StationName == name {
-			return station.StationSID
+			return station.StationSID, nil
 		}
 	}
-	return "" // 返回空字符串，如果没有找到
+	return "", fmt.Errorf("station not found: %s", name)
 }
 
 func fetchMetroData(startSID, endSID string) (*MetroData, error) {
@@ -161,13 +173,34 @@ func fetchMetroData(startSID, endSID string) (*MetroData, error) {
 		return nil, err
 	}
 
+	// 檢查 HTTP 狀態碼
+	if res.StatusCode != http.StatusOK {
+		return nil, fmt.Errorf("API request failed with status %d: %s", res.StatusCode, string(body))
+	}
+
+	// 檢查響應內容是否為 JSON
+	contentType := res.Header.Get("Content-Type")
+	if !strings.Contains(contentType, "application/json") {
+		// 如果不是 JSON，記錄響應內容的前 200 個字符用於調試
+		bodyPreview := string(body)
+		if len(bodyPreview) > 200 {
+			bodyPreview = bodyPreview[:200] + "..."
+		}
+		return nil, fmt.Errorf("API returned non-JSON response (Content-Type: %s). Response preview: %s", contentType, bodyPreview)
+	}
+
 	var metroData MetroData
 	err = json.Unmarshal(body, &metroData)
 	if err != nil {
-		return nil, err
+		// 如果 JSON 解析失敗，記錄響應內容的前 200 個字符
+		bodyPreview := string(body)
+		if len(bodyPreview) > 200 {
+			bodyPreview = bodyPreview[:200] + "..."
+		}
+		return nil, fmt.Errorf("failed to parse JSON response: %v. Response preview: %s", err, bodyPreview)
 	}
 
-	// 获取数据后，将其保存到缓存中
+	// 獲取數據後，將其保存到緩存中
 	err = writeToCache(&metroData)
 	if err != nil {
 		return nil, err
@@ -189,8 +222,14 @@ func searchStations(query string) []Station {
 func calculateTotalFare(requests []FareRequest) (int, error) {
 	totalFare := 0
 	for _, req := range requests {
-		startSID := getSIDByName(req.StartStationName)
-		endSID := getSIDByName(req.EndStationName)
+		startSID, err := getSIDByName(req.StartStationName)
+		if err != nil {
+			return 0, err
+		}
+		endSID, err := getSIDByName(req.EndStationName)
+		if err != nil {
+			return 0, err
+		}
 
 		data, err := fetchMetroData(startSID, endSID)
 		if err != nil {
@@ -220,7 +259,13 @@ type CacheData []MetroData
 func readFromCache(startSID, endSID string) (*MetroData, error) {
 	cacheContents, err := ioutil.ReadFile("cache.json")
 	if err != nil {
-		return nil, err
+		// 如果文件不存在，返回 nil 表示没有缓存数据
+		return nil, nil
+	}
+
+	// 如果文件为空，返回 nil 表示没有缓存数据
+	if len(cacheContents) == 0 {
+		return nil, nil
 	}
 
 	var cache CacheData
@@ -239,15 +284,21 @@ func readFromCache(startSID, endSID string) (*MetroData, error) {
 }
 
 func writeToCache(data *MetroData) error {
+	var cache CacheData
+
 	cacheContents, err := ioutil.ReadFile("cache.json")
 	if err != nil {
-		return err
-	}
-
-	var cache CacheData
-	err = json.Unmarshal(cacheContents, &cache)
-	if err != nil {
-		return err
+		// 如果文件不存在，创建一个空的缓存数组
+		cache = CacheData{}
+	} else if len(cacheContents) == 0 {
+		// 如果文件为空，创建一个空的缓存数组
+		cache = CacheData{}
+	} else {
+		// 如果文件存在且不为空，解析现有数据
+		err = json.Unmarshal(cacheContents, &cache)
+		if err != nil {
+			return err
+		}
 	}
 
 	cache = append(cache, *data)
